@@ -9,7 +9,7 @@ function App() {
 	const user: User = {
 		firstName: "Client",
 		lastName: "User",
-		email: "clientuser@test.com"
+		email: "clientuser@test.com",
 		isAdmin: false,
 	};
 
