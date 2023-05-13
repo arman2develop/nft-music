@@ -1,0 +1,6 @@
+packages:
+  - "js-glico"
+  - "rs-glico"
+  - "client"
+  - "shared"
+
