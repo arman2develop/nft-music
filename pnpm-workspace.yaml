@@ -1,6 +1,6 @@
 packages:
-  - "js-audio"
-  - "rs-audio"
+  - "gaudio"
   - "client"
   - "shared"
+  - "admin"
 

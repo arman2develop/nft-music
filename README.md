@@ -29,7 +29,7 @@ The easiest way to try Glicol:
 
 https://glicol.org
 
-> There you can find guides, demos, docs, and apps for collaboration.
+> There you can find guides, monorepos, docs, and apps for collaboration.
 
 <details>
   <summary>Features</summary>
@@ -58,7 +58,7 @@ https://glicol.org
 | [Run on Bela](https://github.com/chaosprint/glicol/tree/main/rs/bela) | Run Glicol DSL on Bela board for quick audio prototyping.  |
 
 ### 🍿 YouTube Channel
-Find Glicol demo vidoes [in this playlist](https://www.youtube.com/playlist?list=PLT4REhRBWaOOrLQxCg5Uw97gEpN-woo1c).
+Find Glicol monorepo vidoes [in this playlist](https://www.youtube.com/playlist?list=PLT4REhRBWaOOrLQxCg5Uw97gEpN-woo1c).
 
 ## Philosophy of Glicol
 
