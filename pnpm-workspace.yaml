@@ -1,5 +1,5 @@
 packages:
-  - "gaudio"
+  - "gaudio/js"
   - "ui-client"
   - "shared"
   - "ui-admin"
