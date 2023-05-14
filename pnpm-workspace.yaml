@@ -1,6 +1,6 @@
 packages:
   - "gaudio"
-  - "client"
+  - "ui-client"
   - "shared"
-  - "admin"
+  - "ui-admin"
 

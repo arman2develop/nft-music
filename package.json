@@ -9,8 +9,8 @@
     "dev": "turbo run dev"
   },
   "workspaces": [
-    "admin",
-    "client",
+    "ui-admin",
+    "ui-client",
     "gaudio",
     "shared"
   ],
