@@ -12,10 +12,11 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 # path to the project folder as the map value. File paths are relative from the workspace root,
 # and cannot reference projects located outside the workspace boundary.
 projects:
-  webfrontadmin: 'apps/web/ui/webfrontadmin'
-  webfrontclient: 'apps/web/ui/webfrontclient'
+  webfrontadmin: 'apps/web/front/webfrontadmin'
+  webfrontclient: 'apps/web/front/webfrontclient'
+  webfrontshared: 'apps/web/front/webfrontshared'
   wasmjs: 'wasm/gaudio/js'
-  webfrontshared: 'apps/web/ui/webfrontshared'
+  
 
 
 # Configures the version control system to utilize within the workspace. A VCS
