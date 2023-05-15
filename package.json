@@ -10,16 +10,15 @@
   },
   "workspaces": [
     "wasm/gaudio/js",
-
-    "apps/web/ui/admin",
-    "apps/web/ui/client",
-    "apps/web/ui/shared"
-        
+    "apps/web/front/webfrontadmin",
+    "apps/web/front/webfrontclient",
+    "apps/web/front/webfrontshared"
   ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@moonrepo/cli": "^1.5.1",
     "@types/node": "^20.1.4",
     "turbo": "^1.9.4",
     "typescript": "^5.0.4"
