@@ -9,10 +9,12 @@
     "dev": "turbo run dev"
   },
   "workspaces": [
-    "ui-admin",
-    "ui-client",
-    "gaudio/js",
-    "shared"
+    "wasm/gaudio/js",
+
+    "apps/web/ui/admin",
+    "apps/web/ui/client",
+    "apps/web/ui/shared"
+        
   ],
   "keywords": [],
   "author": "",

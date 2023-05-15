@@ -14,42 +14,7 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
 
-  gaudio/js:
-    dependencies:
-      install:
-        specifier: ^0.13.0
-        version: 0.13.0
-    devDependencies:
-      '@types/node-fetch':
-        specifier: ^2.6.3
-        version: 2.6.3
-      vite:
-        specifier: ^2.9.15
-        version: 2.9.15
-      vite-plugin-cross-origin-isolation:
-        specifier: ^0.1.6
-        version: 0.1.6
-
-  shared:
-    dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-is:
-        specifier: ^18.2.0
-        version: 18.2.0
-      styled-components:
-        specifier: ^5.3.5
-        version: 5.3.5(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
-    devDependencies:
-      '@types/styled-components':
-        specifier: ^5.1.25
-        version: 5.1.25
-
-  ui-admin:
+  apps/web/ui/admin:
     dependencies:
       '@monorepo/shared':
         specifier: workspace:*
@@ -77,7 +42,7 @@ importers:
         specifier: ^4.3.5
         version: 4.3.5(@types/node@20.1.4)
 
-  ui-client:
+  apps/web/ui/client:
     dependencies:
       '@monorepo/shared':
         specifier: workspace:*
@@ -119,6 +84,41 @@ importers:
       vite:
         specifier: ^4.3.5
         version: 4.3.5(@types/node@20.1.4)
+
+  apps/web/ui/shared:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-is:
+        specifier: ^18.2.0
+        version: 18.2.0
+      styled-components:
+        specifier: ^5.3.5
+        version: 5.3.5(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
+    devDependencies:
+      '@types/styled-components':
+        specifier: ^5.1.25
+        version: 5.1.25
+
+  wasm/gaudio/js:
+    dependencies:
+      install:
+        specifier: ^0.13.0
+        version: 0.13.0
+    devDependencies:
+      '@types/node-fetch':
+        specifier: ^2.6.3
+        version: 2.6.3
+      vite:
+        specifier: ^2.9.15
+        version: 2.9.15
+      vite-plugin-cross-origin-isolation:
+        specifier: ^0.1.6
+        version: 0.1.6
 
 packages:
 

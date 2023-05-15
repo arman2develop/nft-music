@@ -1,6 +1,6 @@
 packages:
-  - "gaudio/js"
-  - "ui-client"
-  - "shared"
-  - "ui-admin"
+  - "wasm/gaudio/js"
+  - "apps/web/ui/client"
+  - "apps/web/ui/shared"
+  - "apps/web/ui/admin"
 
