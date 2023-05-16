@@ -15,6 +15,10 @@ projects:
   webfrontadmin: 'apps/web/front/webfrontadmin'
   webfrontclient: 'apps/web/front/webfrontclient'  
   webfrontshared: 'shared/front'  
+  
+  browser_package: 'shared/front/packages/browser_package'  
+  node_package: 'shared/front/packages/node_package'  
+  
   gaudio: 'wasm/gaudio/js'
   
 

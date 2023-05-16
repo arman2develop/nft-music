@@ -1,7 +1,6 @@
 packages:
   - "wasm/gaudio/js"
-  - "apps/web/front/webfrontclient"
-  - "apps/web/front/webfrontshared"
-  - "apps/web/front/webfrontadmin"
+  - "apps/web/front/*"
   - "shared/front"
+  - "shared/packages"
   

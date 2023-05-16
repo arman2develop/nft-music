@@ -1,0 +1,44 @@
+{
+  "name": "@monorepo/browser_package",
+  "version": "0.1.0",
+  "description": "A browser package.",
+  "keywords": [
+    "node",
+    "lib",
+    "esm"
+  ],
+  "author": "Arman Riazi",
+  "license": "MIT",
+  "repository": "https://github.com/moonrepo/examples",
+  "packemon": {
+    "format": [
+      "lib",
+      "esm"
+    ],
+    "platform": "browser"
+  },
+  "engines": {
+    "node": ">=18.16.0"
+  },
+  "files": [
+    "esm/**/*",
+    "lib/**/*",
+    "src/**/*"
+  ],
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./lib/index.d.ts",
+      "browser": {
+        "types": "./esm/index.d.ts",
+        "module": "./esm/index.js",
+        "import": "./esm/index.js",
+        "default": "./lib/index.js"
+      },
+      "default": "./lib/index.js"
+    }
+  }
+}

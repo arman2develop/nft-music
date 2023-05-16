@@ -21,6 +21,8 @@
         "webfrontadmin": "moon run webfrontadmin:build",
         "webfrontclient": "moon run webfrontclient:build",
         "gaudio": "moon run gaudio:build",
+        "browser_package": "moon run browser_package:build",
+        "node_package": "moon run node_package:build",
 
         "webfrontadmin:dev": "moon run webfrontadmin:dev",
         "webfrontclient:dev": "moon run webfrontclient:dev",
@@ -32,6 +34,7 @@
     "workspaces": [       
         "apps/*",
         "shared/front/*",        
+        "shared/packages/*",        
         "wasm/js/*"
     ],
     "keywords": [],

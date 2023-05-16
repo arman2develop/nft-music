@@ -1,7 +1,7 @@
 {
     "extends": "./tsconfig.options.json",
     "files": [],
-    "references": [
+    "references": [        
         {
             "path": "apps/web/front/webfrontadmin"
         },
@@ -10,6 +10,12 @@
         },
         {
             "path": "shared/front"
+        },
+        {
+            "path": "shared/packages/browser_package"
+        },        
+        {
+            "path": "shared/packages/node_package"
         }
     ]
 }
