@@ -17,8 +17,9 @@ node:
   packageManager: 'pnpm'
 
   # The version of the package manager (above) to use.
-  pnpm: {}
-
+  pnpm: 
+    version: '8.5.0'
+  
   # Add `node.version` as a constraint in the root `package.json` `engines`.
   addEnginesConstraint: true
 
@@ -26,7 +27,7 @@ node:
   dedupeOnLockfileChange: true
 
   # Version format to use when syncing dependencies within the project's `package.json`.
-  # dependencyVersionFormat: 'workspace'
+  dependencyVersionFormat: 'workspace'
 
   # Infer and automatically create moon tasks from `package.json` scripts, per project.
   # BEWARE: Tasks and scripts are not 1:1 in functionality, so please refer to the documentation.
@@ -37,7 +38,7 @@ node:
 
   # Sync `node.version` to a 3rd-party version manager's config file.
   # Accepts "nodenv" (.node-version), "nvm" (.nvmrc), or none.
-  # syncVersionManagerConfig: 'nvm'
+  # syncVersionManagerConfig: 'nvm'  
 
 # Configures how moon integrates with TypeScript.
 typescript:
@@ -46,10 +47,10 @@ typescript:
   createMissingConfig: false
 
   # Name of `tsconfig.json` file in each project root.
-  # projectConfigFileName: 'tsconfig.json'
+  projectConfigFileName: 'tsconfig.json'
 
   # Name of `tsconfig.json` file in the workspace root.
-  # rootConfigFileName: 'tsconfig.json'
+  rootConfigFileName: 'tsconfig.json'
 
   # Name of the config file in the workspace root that defines shared compiler
   # options for all project reference based config files.
@@ -57,23 +58,13 @@ typescript:
 
   # Update a project's `tsconfig.json` to route the `outDir` compiler option
   # to moon's `.moon/cache` directory.
-  routeOutDirToCache: false
+  routeOutDirToCache: true
 
   # Sync a project's `dependsOn` as project references within the
   # project's `tsconfig.json` and the workspace root `tsconfig.json`.
-  syncProjectReferences: false
+  syncProjectReferences: true
 
   # Sync a project's project references as import aliases to the `paths`
   # compiler option in each applicable project.
   syncProjectReferencesToPaths: false
 
-# Configures Rust within the toolchain.
-rust:
-  # The Rust toolchain to use. Must be a semantic version that includes major, minor, and patch.
-  version: '1.69.0'
-
-  # List of Cargo binaries to install globally and make available to tasks.
-  bins: []
-
-  # Sync the configured version above as a channel to the root `rust-toolchain.toml` config.
-  syncToolchainConfig: false

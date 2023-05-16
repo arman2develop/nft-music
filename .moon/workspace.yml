@@ -13,20 +13,34 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 # and cannot reference projects located outside the workspace boundary.
 projects:
   webfrontadmin: 'apps/web/front/webfrontadmin'
-  webfrontclient: 'apps/web/front/webfrontclient'
-  webfrontshared: 'apps/web/front/webfrontshared'
-  wasmjs: 'wasm/gaudio/js'
+  webfrontclient: 'apps/web/front/webfrontclient'  
+  webfrontshared: 'shared/front/components/webfrontshared'  
   
 
-
+runner:
+  archivableTargets:
+    - ':format'
+    - ':lint'
+    - ':test'
+    - ':typecheck'  
+  logRunningCommand: true
+  inheritColorsForPipedTasks: true
 # Configures the version control system to utilize within the workspace. A VCS
 # is required for determining touched (added, modified, etc) files, calculating file hashes,
 # computing affected files, and much more.
+
+hasher:
+  batchSize: 2500
+  optimization: 'accuracy'
+  walkStrategy: 'vcs'
+  warnOnMissingInputs: true
+
 vcs:
   # The manager/binary to use when managing the repository.
   # Accepts "git", or "svn". Defaults to "git".
   manager: 'git'
-
+  remoteCandidates:
+    - 'origin'
   # The default branch (master/main/trunk) in the repository for comparing the
   # local branch against. For git, this is is typically "master" or "main",
   # and must include the remote prefix (before /). For svn, this should always be "trunk".
