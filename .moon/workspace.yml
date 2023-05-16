@@ -14,7 +14,8 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 projects:
   webfrontadmin: 'apps/web/front/webfrontadmin'
   webfrontclient: 'apps/web/front/webfrontclient'  
-  webfrontshared: 'shared/front/components/webfrontshared'  
+  webfrontshared: 'shared/front'  
+  gaudio: 'wasm/gaudio/js'
   
 
 runner:

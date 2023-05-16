@@ -9,7 +9,7 @@
             "path": "apps/web/front/webfrontclient"
         },
         {
-            "path": "shared"
+            "path": "shared/front"
         }
     ]
 }

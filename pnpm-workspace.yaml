@@ -3,4 +3,5 @@ packages:
   - "apps/web/front/webfrontclient"
   - "apps/web/front/webfrontshared"
   - "apps/web/front/webfrontadmin"
-  - "shared/"
+  - "shared/front"
+  

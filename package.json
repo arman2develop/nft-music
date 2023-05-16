@@ -6,6 +6,7 @@
         "node:version": "node --version",
         "pnpm:version": "pnpm --version",
         "moon": "moon --color --log trace",
+        
         "check": "moon check --all",
         "format": "moon run :format",
         "typecheck": "moon run :typecheck",
@@ -13,12 +14,25 @@
         "lint": "moon run :lint",
         "dev": "moon run :dev",
         "build": "moon run :build",
-        "webfrontadmin:build": "moon run webfrontadmin:build",
-        "webfrontclient:build": "moon run webfrontclient:build"
+
+        "app": "moon run :task --query 'projectType=application'",
+        "front": "moon run webfrontclient:build webfrontadmin:build",
+        
+        "webfrontadmin": "moon run webfrontadmin:build",
+        "webfrontclient": "moon run webfrontclient:build",
+        "gaudio": "moon run gaudio:build",
+
+        "webfrontadmin:dev": "moon run webfrontadmin:dev",
+        "webfrontclient:dev": "moon run webfrontclient:dev",
+        "gaudio:dev": "moon run gaudio:dev",
+        
+        "typescript": "moon run :task --query \"language=typescript\"",
+        "react": "moon run :task --query \"project~react-*\""
     },
     "workspaces": [       
         "apps/*",
-        "shared/front/components/*"        
+        "shared/front/*",        
+        "wasm/js/*"
     ],
     "keywords": [],
     "author": "",
