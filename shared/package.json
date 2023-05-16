@@ -1,5 +1,5 @@
 {
-	"name": "@monorepo/webfrontshared",
+	"name": "@monorepo/shared",
 	"private": true,
 	"devDependencies": {
 		"@types/styled-components": "^5.1.25"

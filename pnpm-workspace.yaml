@@ -1,3 +1,6 @@
 packages:
-  - "apps/*"
-  - "shared/front/components/*"
+  - "wasm/gaudio/js"
+  - "apps/web/front/webfrontclient"
+  - "apps/web/front/webfrontshared"
+  - "apps/web/front/webfrontadmin"
+  - "shared/"

@@ -1,0 +1,19 @@
+{
+    "extends": "../tsconfig.options.json",
+    "compilerOptions": {
+        //"outDir": "../../../../.moon/cache/types/shared/front/components/webfrontshared",
+        "emitDeclarationOnly": false,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noEmit": true
+    },
+    "include": [
+        "src/**/*",
+        "components/*"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.lib.json"
+        }
+    ]
+}

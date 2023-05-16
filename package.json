@@ -2,7 +2,6 @@
     "name": "nft-music-monorepo",
     "version": "0.1.0",
     "description": "",
-    "infra": "monorepo",
     "scripts": {
         "node:version": "node --version",
         "pnpm:version": "pnpm --version",
@@ -19,7 +18,7 @@
     },
     "workspaces": [       
         "apps/*",
-        "shared/front/components/*"
+        "shared/front/components/*"        
     ],
     "keywords": [],
     "author": "",

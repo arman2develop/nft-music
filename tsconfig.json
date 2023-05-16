@@ -9,13 +9,7 @@
             "path": "apps/web/front/webfrontclient"
         },
         {
-            "path": "shared/front/components/webfrontshared"
-        },
-        {
-            "path": "packages/browser-package"
-        },          
-        {
-            "path": "packages/node-package"
+            "path": "shared"
         }
     ]
 }
