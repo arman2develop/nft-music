@@ -1,15 +1,14 @@
 {
-  "extends": "../../../tsconfig.options.json",
-  "compilerOptions": {
-    "outDir": "../../../.moon/cache/types/packages/node_package"
-  },
-  "include": [
-    "src/**/*",
-    "tests/**/*"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    }
-  ]
+    "extends": "../../../tsconfig.options.json",
+    "compilerOptions": {
+        "outDir": "../../../.moon/cache/types/shared/packages/node_package"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.lib.json"
+        }
+    ]
 }

@@ -1,19 +1,19 @@
 {
-  "extends": "../../../tsconfig.options.json",
-  "compilerOptions": {
-    "outDir": "../../../.moon/cache/types/packages/browser_package",
-    "verbatimModuleSyntax": false
-  },
-  "include": [
-    "src/**/*",
-    "tests/**/*"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.esm.json"
+    "extends": "../../../tsconfig.options.json",
+    "compilerOptions": {
+        "outDir": "../../../.moon/cache/types/shared/packages/browser_package",
+        "verbatimModuleSyntax": false
     },
-    {
-      "path": "./tsconfig.lib.json"
-    }
-  ]
+    "include": [
+        "src/**/*",
+        "tests/**/*"
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.esm.json"
+        },
+        {
+            "path": "./tsconfig.lib.json"
+        }
+    ]
 }

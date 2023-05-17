@@ -2,8 +2,7 @@
     "extends": "./tsconfig.base.json",
     "include": [
       "apps/**/*",
-      "shared/packages/**/*",
-      "shared/front/**/*",
+      "shared/**/*"
       "**/.eslintrc.js"
     ],
     "exclude": [

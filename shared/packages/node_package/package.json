@@ -6,7 +6,7 @@
     "node",
     "lib"
   ],
-  "author": "Arman Riazi",
+  "author": "moon",
   "license": "MIT",
   "repository": "https://github.com/moonrepo/examples",
   "packemon": {
@@ -14,8 +14,8 @@
     "platform": "node"
   },
   "engines": {
-    "node": ">=18.16.0",
-    "npm": ">=9.5.1"
+    "node": ">=16.12.0",
+    "pnpm": ">=8.5.0"
   },
   "files": [
     "lib/**/*",

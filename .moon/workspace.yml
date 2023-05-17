@@ -16,8 +16,8 @@ projects:
   webfrontclient: 'apps/web/front/webfrontclient'  
   webfrontshared: 'shared/front'  
   
-  browser_package: 'shared/front/packages/browser_package'  
-  node_package: 'shared/front/packages/node_package'  
+  browser_package: 'shared/packages/browser_package'  
+  node_package: 'shared/packages/node_package'  
   
   gaudio: 'wasm/gaudio/js'
   

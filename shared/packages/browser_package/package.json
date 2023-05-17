@@ -9,7 +9,7 @@
   ],
   "author": "Arman Riazi",
   "license": "MIT",
-  "repository": "https://github.com/moonrepo/examples",
+  "repository": "https://github.com/arman2develop/nft-music",
   "packemon": {
     "format": [
       "lib",
@@ -18,7 +18,8 @@
     "platform": "browser"
   },
   "engines": {
-    "node": ">=18.16.0"
+    "node": ">=18.16.0",
+    "pnpm": ">=8.5.0"
   },
   "files": [
     "esm/**/*",
@@ -31,7 +32,6 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./lib/index.d.ts",
       "browser": {
         "types": "./esm/index.d.ts",
         "module": "./esm/index.js",
