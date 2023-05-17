@@ -1,0 +1,14 @@
+{
+    "extends": "../../../tsconfig.options.json",
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "outDir": "../../../.moon/cache/types/shared/packages/pnode"
+    },
+    "include": ["src/**/*.ts", "tests/**/*.ts"],
+    "exclude": ["node_modules", ".vscode"],
+    "references": [
+        {
+            "path": "./tsconfig.lib.json"
+        }
+    ]
+}

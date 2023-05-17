@@ -1,0 +1,51 @@
+{
+  "name": "@monorepo/pnode",
+  "version": "0.1.0",
+  "description": "A Node.js package.",
+  "keywords": [
+    "node",
+    "lib"
+  ],
+  "author": "moon",
+  "license": "MIT",
+  "repository": "https://github.com/moonrepo/examples",
+ 	"private": true,
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+      "devDependencies": {        
+        "@swc/core": "^1.3.58",
+        "@types/node": "^18.16.12",
+        "packemon": "^3.1.0"     
+  },
+  "packemon": {
+    "format": "lib",
+    "platform": "node"
+  },
+  "engines": {
+    "node": ">=18.16.0",
+    "pnpm": ">=8.5.0"
+  },
+  "files": [
+    "lib/**/*",
+    "src/**/*"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./*": {
+      "types": "./lib/*.d.ts",
+      "node": {
+        "types": "./lib/*.d.ts",
+        "default": "./lib/*.js"
+      },
+      "default": "./lib/*.js"
+    },
+    ".": {
+      "types": "./lib/index.d.ts",
+      "node": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      },
+      "default": "./lib/index.js"
+    }
+  }
+}
