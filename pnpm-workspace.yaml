@@ -3,5 +3,6 @@ packages:
   - "apps/web/front/webfrontclient"
   - "apps/web/front/webfrontadmin"  
   - "shared/front"
-  - "shared/packages"
+  - "shared/pckgs/browser_pckg"
+  - "shared/pckgs/node_pckg"
   

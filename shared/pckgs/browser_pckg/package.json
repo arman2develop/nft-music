@@ -1,6 +1,8 @@
 {
-  "name": "@monorepo/browser_package",
+  "name": "@monorepo/browser_pckg",
   "version": "0.1.0",
+  "private": true,
+  "type": "module",
   "description": "A browser package.",
   "keywords": [
     "node",
@@ -10,12 +12,21 @@
   "author": "Arman Riazi",
   "license": "MIT",
   "repository": "https://github.com/arman2develop/nft-music",
+  "devDependencies": {
+    "packemon": "^3.0.3"
+  },
+  "scripts": {
+    "build": "packemon build --addEngines --addExports"
+  },
   "packemon": {
     "format": [
       "lib",
       "esm"
     ],
-    "platform": "browser"
+    "platform": "browser",
+    "inputs": {
+      "index": "src/index.ts"
+    }
   },
   "engines": {
     "node": ">=18.16.0",
@@ -33,7 +44,6 @@
     "./package.json": "./package.json",
     ".": {
       "browser": {
-        "types": "./esm/index.d.ts",
         "module": "./esm/index.js",
         "import": "./esm/index.js",
         "default": "./lib/index.js"

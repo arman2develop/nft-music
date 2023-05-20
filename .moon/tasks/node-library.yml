@@ -8,7 +8,6 @@ tasks:
       - 'pack'
       - '--addEngines'
       - '--addExports'
-      - '--declaration'
     inputs:
       - '@globs(sources)'
       - 'package.json'

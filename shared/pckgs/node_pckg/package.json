@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/node_package",
+  "name": "@monorepo/node_pckg",
   "version": "0.1.0",
   "description": "A Node.js package.",
   "keywords": [
@@ -9,12 +9,18 @@
   "author": "moon",
   "license": "MIT",
   "repository": "https://github.com/moonrepo/examples",
+  "devDependencies": {
+    "packemon":"^3.0.3"
+  },
   "packemon": {
     "format": "lib",
-    "platform": "node"
+    "platform": "node",
+    "inputs": {
+      "index": "src/index.ts"
+    }
   },
   "engines": {
-    "node": ">=16.12.0",
+    "node": ">=18.16.0",
     "pnpm": ">=8.5.0"
   },
   "files": [
@@ -24,7 +30,6 @@
   "types": "./lib/index.d.ts",
   "main": "./lib/index.js",
   "exports": {
-    "./package.json": "./package.json",
     "./*": {
       "types": "./lib/*.d.ts",
       "node": {

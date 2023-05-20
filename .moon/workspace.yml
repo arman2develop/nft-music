@@ -2,7 +2,7 @@
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
 # Require a specific version of moon while running commands, otherwise fail.
-# versionConstraint: '>=1.0.0'
+versionConstraint: '>=1.0.0'
 
 # Extend and inherit an external configuration file. Must be a valid HTTPS URL or file system path.
 # extends: './shared/workspace.yml'
@@ -15,10 +15,8 @@ projects:
   webfrontadmin: 'apps/web/front/webfrontadmin'
   webfrontclient: 'apps/web/front/webfrontclient'  
   webfrontshared: 'shared/front'  
-  
-  browser_package: 'shared/packages/browser_package'  
-  node_package: 'shared/packages/node_package'  
-  
+  browser_pckg: 'shared/pckgs/browser_pckg'  
+  node_pckg: 'shared/pckgs/node_pckg'  
   gaudio: 'wasm/gaudio/js'
   
 

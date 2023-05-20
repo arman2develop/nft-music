@@ -1,10 +1,6 @@
 {
     "extends": "../../tsconfig.options.json",
     "compilerOptions": {
-        "emitDeclarationOnly": false,
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "noEmit": true,
         "outDir": "../../.moon/cache/types/shared/front"
     },
     "include": [
