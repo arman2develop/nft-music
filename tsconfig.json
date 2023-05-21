@@ -10,12 +10,15 @@
         },
         {
             "path": "shared/front"
-        },
+        },   
         {
             "path": "shared/pckgs/browser_pckg"
         },
         {
             "path": "shared/pckgs/node_pckg"
+        },
+        {
+            "path": "wasm/gaudio/js"
         }
     ]
 }

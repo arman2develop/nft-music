@@ -3,7 +3,8 @@
   "extends": "tsconfig-moon/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
-    "lib": ["esnext", "dom"],
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ES2022"],
     "moduleResolution": "nodenext",
     "target": "es2022",
     "composite": true,
@@ -13,7 +14,8 @@
     "incremental": true,
     "noEmit": false,
     "noEmitOnError": true,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
+    "sourceMap": true,    
     "verbatimModuleSyntax": false
   }
 }

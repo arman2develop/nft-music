@@ -10,17 +10,17 @@
   "license": "MIT",
   "repository": "https://github.com/moonrepo/examples",
   "devDependencies": {
-    "packemon":"^3.0.3"
+    "packemon": "^3.1.0"
+  },
+  "scripts": {
+    "build": "packemon build --addEngines --addExports --declaration"
   },
   "packemon": {
     "format": "lib",
-    "platform": "node",
-    "inputs": {
-      "index": "src/index.ts"
-    }
+    "platform": "node"
   },
   "engines": {
-    "node": ">=18.16.0",
+    "node": ">=16.12.0",
     "pnpm": ">=8.5.0"
   },
   "files": [
@@ -30,8 +30,8 @@
   "types": "./lib/index.d.ts",
   "main": "./lib/index.js",
   "exports": {
+    "./package.json": "./package.json",
     "./*": {
-      "types": "./lib/*.d.ts",
       "node": {
         "types": "./lib/*.d.ts",
         "default": "./lib/*.js"
@@ -39,7 +39,6 @@
       "default": "./lib/*.js"
     },
     ".": {
-      "types": "./lib/index.d.ts",
       "node": {
         "types": "./lib/index.d.ts",
         "default": "./lib/index.js"

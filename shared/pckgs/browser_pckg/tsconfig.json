@@ -5,8 +5,7 @@
         "verbatimModuleSyntax": false
     },
     "include": [
-        "src/**/*",
-        "tests/**/*"
+        "src/**/*"
     ],
     "references": [
         {
