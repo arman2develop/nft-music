@@ -1,6 +1,11 @@
 # https://moonrepo.dev/docs/config/toolchain
 $schema: 'https://moonrepo.dev/schemas/toolchain.json'
 
+# Enable Rust and override default settings
+rust:
+    syncToolchainConfig: true
+    version: '1.69.0'
+
 # Extend and inherit an external configuration file. Must be a valid HTTPS URL or file system path.
 # extends: './shared/toolchain.yml'
 

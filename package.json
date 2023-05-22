@@ -21,23 +21,31 @@
         "build": "moon run :build",
         "app": "moon run :task --query 'projectType=application'",
         "front:dir": "moon run webfrontclient:build webfrontadmin:build",
+        
         "webfrontadmin": "moon run webfrontadmin:build",
         "webfrontclient": "moon run webfrontclient:build",
+        "rustapi": "moon run rustapi:build",
         "gaudio": "moon run gaudio:build",
         "browser_pckg": "moon run browser_package:build",
         "node_pckg": "moon run node_package:build",
+
+        
+        "webfrontadmin:dev": "moon run webfrontadmin:dev",
+        "webfrontclient:dev": "moon run webfrontclient:dev",
+        "gaudio:dev": "moon run gaudio:dev",
+        "rustapi:dev": "moon run rustapi:dev",
+
         "webfrontadmin:moon:graph": "moon project-graph webfrontadmin",
         "webfrontclient:moon:graph": "moon project-graph webfrontclient",
         "gaudio:moon:graph": "moon project-graph gaudio",
         "browser_pckg:moon:graph": "moon project-graph browser_pckg",
         "node_pckg:moon:graph": "moon project-graph node_pckg",
-        "webfrontadmin:dev": "moon run webfrontadmin:dev",
-        "webfrontclient:dev": "moon run webfrontclient:dev",
-        "gaudio:dev": "moon run gaudio:dev",
+        
         "typescript": "moon run :task --query \"language=typescript\"",
         "react": "moon run :task --query \"project~react-*\""
     },
     "workspaces": [
+        "api/rustapi/*",
         "apps/*",
         "shared/pckgs/*",
         "shared/front/*",

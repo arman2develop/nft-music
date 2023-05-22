@@ -2,6 +2,10 @@
     "extends": "./tsconfig.options.json",
     "files": [],
     "references": [
+        
+        {
+            "path": "api/rustapi"
+        },
         {
             "path": "apps/web/front/webfrontadmin"
         },

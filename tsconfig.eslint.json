@@ -1,6 +1,7 @@
 {
     "extends": "./tsconfig.base.json",
     "include": [
+      "api/**/*",        
       "apps/**/*",
       "shared/**/*",            
       "**/.eslintrc.js"
