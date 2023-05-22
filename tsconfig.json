@@ -5,7 +5,7 @@
         
         {
             "path": "api/rustapi"
-        },
+        },         
         {
             "path": "apps/web/front/webfrontadmin"
         },

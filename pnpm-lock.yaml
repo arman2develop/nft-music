@@ -38,6 +38,8 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
 
+  api/rustapi: {}
+
   apps/web/front/webfrontadmin:
     dependencies:
       '@monorepo/node_pckg':

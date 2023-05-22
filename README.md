@@ -23,11 +23,71 @@
 
 ## Get started
 
-### 🚀 The Web App
+### 🚀 The Web3 App
  
 The easiest way to try Nft-Music:
 
+## Zero-build/installation
 
+### build all of projects with different lang/framework/cross platform
+
+```
+pnpm run build        
+```
+
+### build only particular project
+
+```
+pnpm run webfrontadmin
+pnpm run webfrontclient
+pnpm run rustapi
+pnpm run gaudio
+pnpm run browser_pckg
+pnpm run node_pckg
+```
+
+### build only projects in a folder
+
+```
+pnpm run front:dir
+```
+
+### build but not compile again-To see status built
+
+```
+pnpm run check
+```
+
+### Expose a end point to see graph of dependencies of projects
+
+```
+pnpm run m:graph
+```
+
+### Expose a end point to see graph of dependencies of a project
+
+```
+pnpm run gaudio:m:graph
+pnpm run browser_pckg:m:graph
+pnpm run node_pckg:m:graph     
+```
+
+### developer build but not good choice to release
+
+```
+pnpm run webfrontadmin:dev
+pnpm run webfrontclient:dev
+pnpm run gaudio:dev
+```
+
+### query build only particular language among all projects   
+
+```
+pnpm run typescript
+pnpm run react
+```
+
+---
 
 > There you can find guides, monorepos, docs, and apps for collaboration.
 
@@ -53,7 +113,6 @@ The easiest way to try Nft-Music:
 
 
 
-### Zero-installation
 
 
 ## Roadmap

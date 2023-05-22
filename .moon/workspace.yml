@@ -12,7 +12,7 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 # path to the project folder as the map value. File paths are relative from the workspace root,
 # and cannot reference projects located outside the workspace boundary.
 projects:
-  rustapi: 'api/rustapi'
+  rustapi: 'api/rustapi'  
   gaudio: 'wasm/gaudio/js'
   browser_pckg: 'shared/pckgs/browser_pckg'  
   node_pckg: 'shared/pckgs/node_pckg'  
@@ -27,6 +27,9 @@ runner:
     - ':lint'
     - ':test'
     - ':typecheck'  
+    - 'rust:check'
+    - 'rust:lint'
+    - 'rust:test'    
   logRunningCommand: true
   inheritColorsForPipedTasks: true
 # Configures the version control system to utilize within the workspace. A VCS

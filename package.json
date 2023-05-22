@@ -11,7 +11,7 @@
         "pnpm:dedupe": "pnpm dedupe --check",
         "moon:clean": "moon clean --lifetime '7 days'",
         "moon": "moon  trace --color --log",
-        "moon:graph": "moon project-graph",
+        "m:graph": "moon project-graph",
         "check": "moon check --all",
         "format": "moon run :format",
         "typecheck": "moon run :typecheck",
@@ -32,20 +32,19 @@
         
         "webfrontadmin:dev": "moon run webfrontadmin:dev",
         "webfrontclient:dev": "moon run webfrontclient:dev",
-        "gaudio:dev": "moon run gaudio:dev",
-        "rustapi:dev": "moon run rustapi:dev",
+        "gaudio:dev": "moon run gaudio:dev",        
 
-        "webfrontadmin:moon:graph": "moon project-graph webfrontadmin",
-        "webfrontclient:moon:graph": "moon project-graph webfrontclient",
-        "gaudio:moon:graph": "moon project-graph gaudio",
-        "browser_pckg:moon:graph": "moon project-graph browser_pckg",
-        "node_pckg:moon:graph": "moon project-graph node_pckg",
+        "webfrontadmin:m:graph": "moon project-graph webfrontadmin",
+        "webfrontclient:m:graph": "moon project-graph webfrontclient",
+        "gaudio:m:graph": "moon project-graph gaudio",
+        "browser_pckg:m:graph": "moon project-graph browser_pckg",
+        "node_pckg:m:graph": "moon project-graph node_pckg",
         
-        "typescript": "moon run :task --query \"language=typescript\"",
-        "react": "moon run :task --query \"project~react-*\""
+        "typescript": "moon run :build --query \"language=typescript\"",
+        "react": "moon run :build --query \"project~react-*\""
     },
     "workspaces": [
-        "api/rustapi/*",
+        "api/rustapi",
         "apps/*",
         "shared/pckgs/*",
         "shared/front/*",

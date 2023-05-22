@@ -1,5 +1,5 @@
 packages:
-  - "api/rustapi"
+  - "api/rustapi"  
   - "wasm/gaudio/js"
   - "apps/web/front/webfrontclient"
   - "apps/web/front/webfrontadmin"  
