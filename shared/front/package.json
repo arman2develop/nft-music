@@ -31,9 +31,9 @@
       "react-dom": "18.2.0 || 17.x",
       "styled-components": "^5.2.1"
     },
-    "packageManager": "pnpm@8.5.0",
+    "packageManager": "pnpm@8.6.12",
     "engines": {
-        "node": "18.16.0"
+        "node": "18.17.1"
     },
     "files": [
       "lib"
@@ -48,4 +48,3 @@
       }
     }
   }
-  
