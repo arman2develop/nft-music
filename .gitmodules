@@ -1,0 +1,12 @@
+[submodule "gaudio"]
+	path = wasm/gaudio/
+	url = https://github.com/arman2develop/gaudio.git
+[submodule "nft-music-ui-marketplace"]
+	path = apps/web/front/webfrontclient
+	url = https://github.com/21Cricket/nft-music-ui-marketplace.git
+[submodule "nft-music-ui-website"]
+	path = apps/web/front/webfrontclient
+	url = https://github.com/21Cricket/nft-music-ui-website.git
+[submodule "nft-music-ui-admin"]
+	path = apps/web/front/webfrontadmin
+	url = https://github.com/21Cricket/nft-music-ui-admin.git
