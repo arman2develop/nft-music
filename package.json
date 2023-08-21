@@ -5,7 +5,7 @@
     "scripts": {
         "node:version": "node --version",
         "pnpm:version": "pnpm --version",
-        "pnpm:yourpackage": "pnpm view yourpackage versions",        
+        "pnpm:yourpackage": "pnpm view yourpackage versions",
         "pnpm:clean": "find ./ -name node_modules -type d -exec rm -rf {} +",
         "pnpm:update": "pnpm -r update -i -L",
         "pnpm:dedupe": "pnpm dedupe --check",
@@ -21,25 +21,20 @@
         "build": "moon run :build",
         "app": "moon run :task --query 'projectType=application'",
         "front:dir": "moon run webfrontclient:build webfrontadmin:build",
-        
         "webfrontadmin": "moon run webfrontadmin:build",
         "webfrontclient": "moon run webfrontclient:build",
         "rustapi": "moon run rustapi:build",
         "gaudio": "moon run gaudio:build",
         "browser_pckg": "moon run browser_package:build",
         "node_pckg": "moon run node_package:build",
-
-        
         "webfrontadmin:dev": "moon run webfrontadmin:dev",
         "webfrontclient:dev": "moon run webfrontclient:dev",
-        "gaudio:dev": "moon run gaudio:dev",        
-
+        "gaudio:dev": "moon run gaudio:dev",
         "webfrontadmin:m:graph": "moon project-graph webfrontadmin",
         "webfrontclient:m:graph": "moon project-graph webfrontclient",
         "gaudio:m:graph": "moon project-graph gaudio",
         "browser_pckg:m:graph": "moon project-graph browser_pckg",
         "node_pckg:m:graph": "moon project-graph node_pckg",
-        
         "typescript": "moon run :build --query \"language=typescript\"",
         "react": "moon run :build --query \"project~react-*\""
     },
@@ -54,9 +49,9 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@moonrepo/cli": "^1.6.0",
+        "@moonrepo/cli": "^1.12.0",
         "@swc/core": "^1.3.59",
-        "@types/node": "^18.16.0",
+        "@types/node": "^18.17.1",
         "eslint": "^8.39.0",
         "eslint-config-moon": "^2.0.3",
         "packemon": "^3.1.0",
