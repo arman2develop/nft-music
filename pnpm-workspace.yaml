@@ -1,0 +1,9 @@
+packages:
+  - "api/rustapi"  
+  - "wasm/gaudio/js"
+  - "apps/web/front/webfrontclient"
+  - "apps/web/front/webfrontadmin"  
+  - "shared/front"
+  - "shared/pckgs/node_pckg"
+  - "shared/pckgs/browser_pckg"
+  

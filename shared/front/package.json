@@ -1,0 +1,51 @@
+{
+    "name": "@monorepo/sharedfront",
+    "private": "true",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview",
+      "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+    },
+    "dependencies": {      
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+      "@babel/core": "^7.17.8",
+      "@types/node": "^18.16.0",
+      "@types/react": "^18.2.0",
+      "@types/react-dom": "^18.2.0",
+      "@types/styled-components": "^5.1.26",
+      "@vitejs/plugin-react": "^1.2.0",
+      "acorn-jsx": "^5.3.2",
+      "babel-loader": "^8.2.4",
+      "json": "^11.0.0",    
+      "typescript": "^5.0.4",
+      "vite": "^2.8.6",
+      "vite-plugin-dts": "^1.0.3"      
+  },    
+    "peerDependencies": {
+      "react": "18.2.0 || 17.x",
+      "react-dom": "18.2.0 || 17.x",
+      "styled-components": "^5.2.1"
+    },
+    "packageManager": "pnpm@8.5.0",
+    "engines": {
+        "node": "18.16.0"
+    },
+    "files": [
+      "lib"
+    ],
+    "main": "./lib/sharedfront.umd.js",
+    "module": "./lib/sharedfront.es.js",
+    "types": "./lib/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./lib/sharedfront.es.js",
+        "require": "./lib/sharedfront.umd.js"
+      }
+    }
+  }
+  
