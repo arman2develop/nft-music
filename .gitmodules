@@ -1,12 +1,19 @@
-[submodule "gaudio"]
+[submodule "wasm/gaudio"]
 	path = wasm/gaudio/
 	url = https://github.com/arman2develop/gaudio.git
-[submodule "nft-music-ui-marketplace"]
-	path = apps/web/front/webfrontclient
+
+[submodule "api/rustapi/nft-music-rustapi"]
+	path = api/rustapi/nft-music-rustapi/
+	url = https://github.com/arman2develop/nft-music-rustapi.git
+
+[submodule "apps/web/front/webfrontclient/nft-music-ui-marketplace"]
+	path = apps/web/front/webfrontclient/nft-music-ui-marketplace
 	url = https://github.com/21Cricket/nft-music-ui-marketplace.git
-[submodule "nft-music-ui-website"]
-	path = apps/web/front/webfrontclient
+
+[submodule "apps/web/front/webfrontclient/nft-music-ui-website"]
+	path = apps/web/front/webfrontclient/nft-music-ui-website
 	url = https://github.com/21Cricket/nft-music-ui-website.git
-[submodule "nft-music-ui-admin"]
-	path = apps/web/front/webfrontadmin
+
+[submodule "apps/web/front/webfrontadmin/nft-music-ui-admin"]
+	path = apps/web/front/webfrontadmin/nft-music-ui-admin
 	url = https://github.com/21Cricket/nft-music-ui-admin.git
