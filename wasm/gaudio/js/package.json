@@ -1,0 +1,20 @@
+{
+  "name": "@monorepo/js",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Gaudio as an independent JavaScript library.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.4",
+    "vite": "^4.3.8",
+    "vite-plugin-cross-origin-isolation": "^0.1.6"
+  },
+  "dependencies": {
+    "install": "^0.13.0"
+  },
+  "repository": "https://github.com/arman2develop/gaudio"
+}

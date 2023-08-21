@@ -1,0 +1,36 @@
+type: 'application'
+language: 'javascript'
+
+fileGroups:
+  app:
+    - 'src/vite-env.d.ts'
+    - 'vite.config.*'
+    - 'main.js'
+  sources:
+    - 'src/**/*'    
+
+tasks:
+  build:
+    command: 'vite'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+
+  export:
+    command: 'vite export -o ./build'
+    deps:
+      - 'build'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    outputs:
+      - '.js'
+      - 'build'
+
+  dev:
+    command: 'vite'
+    local: true
+
+  start:
+    command: 'vite preview'
+    local: true

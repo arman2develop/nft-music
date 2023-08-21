@@ -43,7 +43,7 @@
         "apps/*",
         "shared/pckgs/*",
         "shared/front/*",
-        "wasm/js/*"
+        "wasm/gaudio"
     ],
     "keywords": [],
     "author": "",
@@ -61,8 +61,8 @@
         "tsconfig-moon": "^1.3.0",
         "typescript": "^5.0.4"
     },
-    "packageManager": "pnpm@8.5.0",
+    "packageManager": "pnpm@8.6.12",
     "engines": {
-        "node": "18.16.0"
+        "node": "18.17.1"
     }
 }
