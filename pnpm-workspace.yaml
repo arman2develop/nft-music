@@ -3,7 +3,7 @@ packages:
   - "wasm/gaudio/js"
   - "apps/web/front/webfrontclient"
   - "apps/web/front/webfrontadmin"  
-  - "shared/front"
-  - "shared/pckgs/node_pckg"
+  - "shared/front"  
   - "shared/pckgs/browser_pckg"
+  - "shared/pckgs/node_pckg"
   

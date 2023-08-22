@@ -1,15 +1,4 @@
 {
-  "ExpandedNodes": [
-    "",
-    "\\apps\\web",
-    "\\apps\\web\\front",
-    "\\apps\\web\\front\\webfrontadmin",
-    "\\apps\\web\\front\\webfrontadmin\\nft-music-ui-admin",
-    "\\apps\\web\\front\\webfrontclient",
-    "\\shared\\pckgs",
-    "\\shared\\pckgs\\browser_pckg",
-    "\\shared\\pckgs\\node_pckg",
-    "\\wasm"
-  ],
+  "ExpandedNodes": [],
   "PreviewInSolutionExplorer": false
 }

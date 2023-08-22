@@ -2,10 +2,10 @@
     "extends": "./tsconfig.options.json",
     "files": [],
     "references": [
-        
+
         {
             "path": "api/rustapi"
-        },         
+        },
         {
             "path": "apps/web/front/webfrontadmin"
         },
@@ -14,7 +14,7 @@
         },
         {
             "path": "shared/front"
-        },   
+        },
         {
             "path": "shared/pckgs/browser_pckg"
         },
